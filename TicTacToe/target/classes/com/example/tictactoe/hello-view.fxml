@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="738.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.HelloController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="75.0" layoutY="74.0" prefHeight="356.0" prefWidth="373.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="92.0" prefWidth="120.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="0.0" prefWidth="120.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="120.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="120.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="100.0" prefHeight="120.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="100.0" prefHeight="120.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn00" mnemonicParsing="false" onAction="#onClickBtn00" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="btn01" mnemonicParsing="false" onAction="#onClickBtn01" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" />
+            <Button fx:id="btn02" mnemonicParsing="false" onAction="#onClickBtn02" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" />
+            <Button fx:id="btn10" mnemonicParsing="false" onAction="#onClickBtn10" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="1" />
+            <Button fx:id="btn11" mnemonicParsing="false" onAction="#onClickBtn11" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn12" mnemonicParsing="false" onAction="#onClickBtn12" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn20" mnemonicParsing="false" onAction="#onClickBtn20" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="2" />
+            <Button fx:id="btn21" mnemonicParsing="false" onAction="#onClickBtn21" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn22" mnemonicParsing="false" onAction="#onClickBtn22" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Text fx:id="who" layoutX="472.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="334.99999732896686">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe Game">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
